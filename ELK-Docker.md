@@ -1,14 +1,19 @@
 ### 在Docker中安装ELK (ElasticSearch, Logstash, Kibana)
 
- sudo chown -R root:root elk-docker/
+ 1.将项目下的elk-docker文件夹发送到安装docker的linux主机[最小4G内存]
  
- sudo chmod -R 777 elk-docker/
+ 2.修改文件夹所有者`sudo chown -R root:root elk-docker/`
  
+ 3.修改文件权限`sudo chmod -R 777 elk-docker/`, 确保挂载数据卷时,文件可访问
  
- max virtual memory areas vm.max_map_count [65530] is too low, increase to at...
+ 4.修改最大虚拟内存大小: `vi /etc/sysctl.conf`
+
+```
+  vm.max_map_count=655360
+```
+
+  执行:`sysctl -p`
  
- vi /etc/sysctl.conf
+ 5.运行`docker-compose up -d`启动3个容器
  
- vm.max_map_count=655360
- 
- sysctl -p
+ 6.启动成功后: 访问`http://[docker主机ip]:5601`进入kibana的Web控制台
