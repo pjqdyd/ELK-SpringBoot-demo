@@ -28,9 +28,9 @@
   
   5. 在Kibana的Web控制台,定义Elasticsearch的Create Index Patterns输入springboot-logs-2020.06.20
      创建过滤条件索引, 如下图所示:
-     ![创建索引](https://upload-images.jianshu.io/upload_images/14511997-a7d72702154c8b84.png)
+     <img src="https://upload-images.jianshu.io/upload_images/14511997-a7d72702154c8b84.png"/>
      
      
   6. 创建完成后, 回到Kibana的Discover即可监控日志, 如下图所示:
-     ![监控日志](https://upload-images.jianshu.io/upload_images/14511997-2d7b1ccd3386207c.png)
+     <img src="https://upload-images.jianshu.io/upload_images/14511997-a7d72702154c8b84.png"/>
      
