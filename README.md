@@ -17,7 +17,7 @@
  ```
 
 #### 如何运行:
-  1. 根据[Elk-Docker.md](./Elk-Docker.md)文件在Docker中启动3个容器
+  1. 根据[Elk-Docker.md](./ELK-Docker.md)文件在Docker中启动3个容器
   
   2. 启动成功后浏览器访问`http://[docker主机ip]:5601`进入Kibana的Web控制台
   
